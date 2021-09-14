@@ -1,0 +1,19 @@
+{
+  "name": "spfxtranslator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "requirejs": "^2.3.6",
+    "uuid": "^8.3.2"
+  },
+  "bin": {
+      "spfxTranslator": "index.js"
+  }
+}
