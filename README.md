@@ -1,5 +1,5 @@
 # spfxTranslator
-Automatically translates your SPFX localization with Azure.
+Translate your SPFX localization with Azure Cognitive services.
 
 ## installation
 `npm i -g https://github.com/EldinHb/spfxTranslator`
