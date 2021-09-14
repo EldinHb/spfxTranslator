@@ -23,7 +23,6 @@ const setAzureKey = () => {
     config.azure.key = setAzureKeyParam;
     fs.writeFile(__dirname + '/config.json', JSON.stringify(config, null, 4), function (e) {
         console.log('Azure key set to ' + setAzureKeyParam);
-        conso
     });
 }
 
