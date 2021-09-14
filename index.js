@@ -4,7 +4,7 @@ const requireJS = require('requirejs');
 const fs = require('fs');
 const axios = require('axios').default;
 const { v4: uuidv4 } = require('uuid');
-const providers = require('config.json');
+const providers = require(__dirname + '/config.json');
 
 const args = process.argv.slice(2);
 
@@ -19,9 +19,9 @@ const getParam = (text) => {
 const setAzureKeyParam = getParam('-set-azure-key');
 
 const setAzureKey = () => {
-    const config = require('./config.json');
+    const config = require(__dirname + '/config.json');
     config.azure.key = setAzureKeyParam;
-    fs.writeFile('config.json', JSON.stringify(config, null, 4), function (e) {
+    fs.writeFile(__dirname + '/config.json', JSON.stringify(config, null, 4), function (e) {
         console.log('Azure key set to ' + setAzureKeyParam);
         conso
     });
