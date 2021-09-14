@@ -1,0 +1,7 @@
+{
+    "azure": {
+        "key": "",
+        "endpoint": "https://api.cognitive.microsofttranslator.com",
+        "location": "global"
+    }
+}
