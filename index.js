@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const requireJS = require('requirejs');
 const fs = require('fs');
 const axios = require('axios').default;

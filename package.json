@@ -14,6 +14,6 @@
     "uuid": "^8.3.2"
   },
   "bin": {
-      "spfxTranslator": "index.js"
+      "spfxTranslator": "./index.js"
   }
 }
