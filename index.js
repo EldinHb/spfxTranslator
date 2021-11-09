@@ -35,6 +35,7 @@ const translateSpfx = () => {
     const provider = getParam('-provider') ? providers[getParam('-provider').toLowerCase()] : providers.azure;
     
     const translateWithAzure = async (to, text) => {
+        to = to.filter(x => !x.includes('myStrings'));
         const response = await axios({
             baseURL: provider.endpoint,
             url: '/translate',
@@ -52,7 +53,7 @@ const translateSpfx = () => {
             },
             data: text,
             responseType: 'json'
-        });
+        }).catch((r) => console.log(r));
     
         return response.data;
     }
